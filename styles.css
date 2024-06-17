@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  background-color: hsl(0, 0%, 95%);
+}
+
+#weatherForm {
+  padding: 10px;
+}
+
+#cityInput {
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 10px;
+  width: 200px;
+  border: none;
+  box-shadow: 2px 2px 5px hsl(0, 0%, 60%);
+}
+
+#cityBtn {
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: hsla(120, 100%, 35%, 0.675);
+  box-shadow: 2px 2px 5px hsl(0, 0%, 60%);
+  color: white;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+}
+
+#cityBtn:hover {
+  background-color: hsla(120, 100%, 25%, 0.675);
+}
+
+#cityBtn:active {
+  background-color: hsla(120, 100%, 15%, 0.675);
+}
+
+#card {
+  margin-top: 20px;
+  background: linear-gradient(
+    180deg,
+    hsla(202, 100%, 50%, 0.621),
+    hsla(51, 100%, 50%, 0.648)
+  );
+  border-radius: 20px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 2px 2px 5px hsl(0, 0%, 60%);
+  text-align: center;
+}
+
+p {
+  margin: 10px;
+}
+
+#cityName {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+#temp {
+  font-size: 2.5rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#humidity {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+#desc {
+  font-size: 1.5rem;
+  font-family: monospace;
+}
+
+#wind,
+#pressure {
+  font-size: 1.2rem;
+}
+
+#emoji {
+  font-size: 3.5rem;
+}

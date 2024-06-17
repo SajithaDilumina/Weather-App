@@ -9,7 +9,7 @@ const card = document.getElementById("card");
 const tempToggle = document.getElementById("tempToggle");
 const APIKey = "53af102e3dda937df81929697ea6a4c2";
 
-let isCelsius = true; // Keep track of the current temperature unit
+let isCelsius = true;
 
 document
   .getElementById("weatherForm")
@@ -88,10 +88,10 @@ function updateTemperature(kelvinTemp, isCelsius) {
 }
 
 temp.addEventListener("mouseover", () => {
-  isCelsius = !isCelsius; // Toggle the temperature unit
-  const currentTemp = parseFloat(temp.textContent); // Get the current temperature value
+  isCelsius = !isCelsius;
+  const currentTemp = parseFloat(temp.textContent);
   const kelvinTemp = isCelsius
     ? ((currentTemp - 32) * 5) / 9 + 273.15
-    : currentTemp + 273.15; // Convert the displayed temp back to Kelvin
-  updateTemperature(kelvinTemp, isCelsius); // Update the displayed temperature
+    : currentTemp + 273.15;
+  updateTemperature(kelvinTemp, isCelsius);
 });
